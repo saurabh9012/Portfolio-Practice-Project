@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* color: white; */
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navbar Style... */
+nav{
+    display: flex; /*Ese sb ek line mein aagye. jo phle sb neche ko aarhe the.*/
+    justify-content: space-around; /*Eske krne se jo humare navbar mein left or right vaale hai unme equal space aaye.*/
+    align-items: center; /*eske krne se ye center mein hogya mtlb ki na uper na neche bilkul beach mein*/
+    height: 90px ;/*ye height de hai navbar ko ki kitne hone chaye.*/
+    background-color: rgb(18,18,62); /*ye background color deya navbar ko.*/
+    position: sticky;
+}
+/* Nav ka jo left side hai wo style... */
+nav .left{
+    font-size: x-large; /*Ese jo mere left side mein name lekha hai wo size jada hogya.*/
+    color: white;
+}
+nav .left span{
+    color: purple; /*Jo humne wo left nav mein name etc lekha hai usko color deya hai.*/
+    font-size: xx-large; /*Jo humne wo left nav mein name etc deya hai usko size deya hai.*/
+}
+/* Nav ka jo Right side hai wo style... */
+nav .right ul{
+    display: flex; /*Ese wo line mein aagye jo home or about etc the jo phle neche ko aarhe the.*/
+    justify-content: center;
+
+}
+nav .right ul li{
+    list-style: none; /*jo dot dot aarhe the wo nhi aarhe hai.*/
+    margin: 0 20px; /*ese humare home about mein margin aagye uper neche or beach mein.*/
+    
+}
+nav .right ul li a{
+    color: white; /*Ese color deya hai text ko*/
+    text-decoration: none; /*Jo under line aarhe the home about ki neche wo deye hai.*/
+    text-transform: uppercase; /*Ese kya hua jo humare About etc the wo small mein the ab sb uppercase mein hogye.*/
+}
+nav .right ul li a:hover{ /*ye hover kiya hai ki jb bhi hum unpr about home etc pr cusor lekr jaaye to ye ho.*/
+    color: rgb(229, 158, 236);
+    font-size: large;
+}
+
+
+
+/* homeSection Style... */
+#homeSection{
+    display: flex; /*ese wo sb line mein aagye vrna neche ko aarhe the sb.*/
+    justify-content: space-around; /*ese left or right section mein hrr side se equal sapce aagya hai.*/
+    /* margin: 80px 0px; *//*Kyu ki ab height de de to eske koi need nhi hai.*/
+    background-color: rgb(0, 0, 33); /*Hume homeSection ko background color deya hai.*/
+    height: 525px; /*Ye homeSection ki height de hai ki kitne rhe.*/
+    align-items: center; /*Ese kya hoga jo humare height de hue hai uske hesab se ye apne center khud dekh lege.*/
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%); /*Ese kya hua jo humare wo hai jo design aaya hai 
+                                                                    homeSection mein wo ese hi hai.*/
+}
+#homeSection > div{ /*ye esliye deya hume kya krna tha ki jo humare left section hai or right section hai unko width dene
+    the to agar hum jaise aise dete ki left section width to wo le to rha tha but humare right section ki jgha bhi le rha
+    tha to ese bachne ki leye humne direct div ko hi de de width to ese dono left or right ko equa mel gye.*/
+    width: 40%;
+}
+/* homeSection ka jo leftSection side hai wo style... */
+#homeSection .leftSection{
+    color: white;
+    font-size: 2.4rem; /*Jo left side mein hai name or kya krte hai wo uske font size ki leye.*/
+    /* margin: 60px 0px;*/   /*Ab eske jarurat nhi kyu ki uper humne homeSection mein align item center kr deya hai.*/
+    text-transform: uppercase;/*Ese kya hua hai jo humare left side mein wo name or kya krte hai wo uppercase mein kiye hai.*/
+}
+#homeSection .leftSection .purple{
+    color: purple; /*Jo Humare leftside hai jo name etc deya hai uske jo alag color deya hai wo ese vjha se hai.*/
+}
+#homeSection .leftSection button{ /*Jo download Cv button bnaya hai uske style hai ye saare.*/
+    padding: 9px 12px;
+    border-radius: 14px;
+    border-color: aqua;
+    background-color: rgb(218, 255, 196);
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+/* homeSection ka jo RightSection side hai wo style... */
+/* #homeSection .rightSection{
+    background-color: aqua;
+} */
+#homeSection .rightSection img{ /*Jo right side mein image de hai uske leye kra hai neche sb.*/
+    width: 50%;
+    height: 90%;
+    border-radius: 60px;
+    margin-left: 40%;
+    /* margin: 50px 0; */
+}
+
+/* About Section Style... */
+#aboutSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    align-items: center;
+    /* background-color: aqua; */
+}
+#aboutSection > div{
+    width: 40%;
+}
+/* About leftSection style... */
+/* #aboutSection .aboutleftSection{
+    background-color: aqua;
+} */
+#aboutSection .aboutleftSection img{
+    margin: 80px 50px;
+    width: 450px;
+    height: 300px;
+    /* margin-left: 30%; */
+}
+/* About rightSection style... */
+#aboutSection .aboutrightSection{
+    /* background-color: aqua; */
+    font-size: small;
+}
+#aboutSection .aboutrightSection h1{
+    font-size: xx-large;
+}
+#aboutSection .aboutrightSection span{
+    color: purple;
+}
+
+
+
+/* Service Section Style... */
+#serviceSection{
+    background-color: lightcyan;
+    height: 400px;
+}
+.container{
+    /* background-color: aqua; */
+    width: 1100px;
+    /* height: 500px; */
+    padding:0 15px;
+    margin:0 auto
+
+}
+.sectionheading{
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 0rem;
+    line-height: 3;
+}
+.sectionheading span{
+    color: purple;
+}
+/* ye grid hai eske under. */
+#serviceSection .card-wrapper{
+    display: grid; /*ye kya kra hai display grid ki hai*/
+    grid-template-columns:1fr 1fr 1fr; /*ye ki kitne colum chahye*/
+    grid-column-gap: 2rem; /*fr unki beach mein gap*/
+    grid-row-gap: 2rem; /*ye row ki side ko gap*/
+}
+#serviceSection .card-wrapper .card{
+    background-color: white;
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+}
+#serviceSection .card-wrapper .card:hover{
+    background-color: rgb(18,18,62);
+    color: white;
+}
+#serviceSection .card-wrapper .card img{
+    width: 50px;
+    position: absolute;
+    top: -1.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#serviceSection .card-wrapper .card p{
+    font-size: 1rem;
+}
+
+
+/* Contact Section Style... */
+.container1{
+    width: 800px;
+    height: 570px;
+    padding:0 15px;
+    margin:0 auto;
+    /* background-color: aqua; */
+}
+.contactsectionheading{
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 0rem;
+    line-height: 3;
+}
+.contactsectionheading span{
+    color: purple;
+}
+#contactSection .cardwrapper{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+#contactSection .cardwrapper .card1{
+    text-align: center;
+}
+#contactSection .cardwrapper .card1 img{
+    width:50px;
+    margin-bottom: 1rem;
+}
+.contactform{
+    align-items: center;
+    /* text-align: center; */
+    padding: 10px 154px;  
+    padding-top: 20px;
+    font-weight: bold;
+}  
+/* form{
+    margin-top:10px ; 
+    padding: 20px 70px; 
+} */
+.contactform .mb-3{
+    /* margin-right: 50px; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.contactform .mb-3 input{
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+.contactform button{
+    padding: 5px;
+    margin:0px 10px;
+    border-radius: 18px;
+    width: 100px;
+    /* border-color: black; */
+    color: white;
+    font-size: 15px;
+    background-color:purple;
+    cursor: pointer;
+}
+
+
+/* Footer Section Style... */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
+
+

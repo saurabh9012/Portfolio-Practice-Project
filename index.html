@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh - Developer|Portfolio</title>
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="left">
+                <span>Saurabh's</span> Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#homeSection">Home</a></li>
+                    <li><a href="#aboutSection">About</a></li>
+                    <li><a href="#serviceSection">Service</a></li>
+                    <li><a href="#contactSection">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section 1 -->
+    <section id="homeSection">
+        <div class="leftSection">
+            Hi, I am <span class="purple">Saurabh Kumar</span>
+            <div>and I am a <span class="purple" id="element"></span></div> <!--ye span vaale line Typed.js ki part hai.-->
+            <div class="buttons">
+                <!-- Hum kya krege agar Dowload button pr click kre to cv download ho.
+                to uske leye main button ko anchar tag<a> se link kruga neche dekhe kaise
+                    or saath mein ek file bnauga jisme cv hoga or wo link duga.-->
+                <a href="cv.txt"><button>Download CV</button></a>                                              
+            </div>
+        </div>
+        <div class="rightSection">
+            <img src="image/3.jpg" alt="">
+        </div>
+    </section>
+
+
+    <!-- Section 2 -->
+    <section id="aboutSection">
+            <div class="aboutleftSection">
+                <img src="image/4.avif" alt="">
+            </div>
+            <div class="aboutrightSection">
+                <h1>About <span>Me</span></h1>
+                <p>As a front-end developer, I am passionate about creating engaging and dynamic user experiences through 
+                    the latest web technologies, with a strong background in HTML, CSS, and JavaScript, 
+                    I am skilled at bringing design concepts to life through clean and efficient code. 
+                    In my current role, I am responsible for developing and maintaining the front end of complex web applications,
+                    working closely with UX designers, back-end developers, and stakeholders to deliver outstanding results.
+                    I am also experienced in using modern front-end frameworks and libraries such as React and 
+                    I am always seeking new opportunities to expand my skill set and stay ahead of the curve. 
+                    Whether working on a new project or improving an existing one, I am committed to delivering high-quality and 
+                    accessible user experiences that meet the needs of my clients and end-users. When I'm not coding, 
+                    you can find me exploring the latest trends in web development or contributing to the open-source community.
+                </p>
+            </div>
+    </section>
+
+
+    <!-- sction 3 -->
+    <section id="serviceSection">
+        <div class="container">
+            <div class="sectionheading">
+                <h1><span>Our</span> Services</h1>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="image/monitor.png" alt="">
+                    <h4>Web Design</h4>
+                    <p>I am outgoing, dedicated, and open-minded. I believe that a person should work on developing their professional skills and learning new things all the time.</p>
+                </div>
+                <div class="card">
+                    <img src="image/programming.png" alt="">
+                    <h4>Web Development</h4>
+                    <p>I am outgoing, dedicated, and open-minded. I believe that a person should work on developing their professional skills and learning new things all the time.</p>
+                </div>
+                <div class="card">
+                    <img src="image/automation.png" alt="">
+                    <h4>Front-end Developer</h4>
+                    <p>I am outgoing, dedicated, and open-minded. I believe that a person should work on developing their professional skills and learning new things all the time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- section 4 -->
+    <section id="contactSection">
+        <div class="container1">
+            <div class="contactsectionheading">
+                <h1>Contact<span> Us</span></h1>
+            </div> 
+            <div class="cardwrapper">
+                <div class="card1">
+                    <img src="image/phone-call.png" alt="">
+                    <h1>Call Us</h1>
+                    <h4>8193076522</h4>
+                </div>
+                <div class="card1">
+                    <img src="image/mail.png" alt="">
+                    <h1>Email Us</h1>
+                    <h4>saurabhkumarhic@gmail.com</h4>
+                </div>
+            </div>
+            <div class="contactform">
+                <form>
+                    <div class="mb-3">
+                        <label for="clientname" class="form-label">Your Name</label>
+                        <input type="name" class="form-control" id="clientname" aria-describedby="emailHelp"> 
+                      </div>
+                    <div class="mb-3">
+                        <label for="clientemail" class="form-label1">Your Email address</label>
+                        <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="clientphone" class="form-label">Your Phone</label>
+                      <input type="number" class="form-control" id="clientphone">
+                      <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+                    </div>
+                    <!-- <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div> -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- section 5 -->
+    <section>
+        <footer>
+            <div class="center">
+                Copyright &copy; www.Saurabh'sPortfolio.com. All rights reserved!
+            </div>
+        </footer>
+    </section>
+
+    <!-- Typed.js kya krta hai hume thoda animation provide krta hai or ye hume mela typed.js chrome pr krne se. ye copy
+    kr ki laaye. Eska ek line span name se uper paste kiya hai.-->
+    <!-- Typed.js link -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Ye script tag hai -->
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer'],  /*Esme wo lekhege jo chahte hai ki aaye eske help se.*/
+          typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
